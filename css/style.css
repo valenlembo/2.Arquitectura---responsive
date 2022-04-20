@@ -88,7 +88,7 @@ ul.show{
 .pieDePag {  
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
     width: 98vw;
     margin-top: 50px;
     font-size: medium;
@@ -128,7 +128,7 @@ ul.show{
 .derechos { 
     grid-area: derechos; 
     color: #202121;
-    margin-left: 10%;
+    margin-left: 13%;
 }
 .linea{
     border-bottom: solid 1px #202121;
@@ -444,12 +444,10 @@ ul.show{
     border-radius: 20px;
     background-color: #202121;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 30px 30px;
-    box-shadow: 2px 0px 30px rgb(0 0 0 / 10%);
     margin: 70px 0px 100px 200px;
 }
 .contactoCaja .contactoHeader h3{
@@ -475,19 +473,18 @@ ul.show{
     background: rgba(0, 0, 0, 0.1);
     border: 1px solid #525252;
     color: #f4f4f4;
+    margin: 10px;
     padding: 10px;
-    box-sizing: border-box;
-    margin-top: 10px;
-    resize: none;
 }
 .contactoInputs button{
-    width: 270px;
+    width: 90%;
     height: 40px;
     background-color: #e7eef3;
     border-radius: 10px;
-    margin: 10px 0px 0px 5px;
     font-size: 1.2rem;
     font-weight: 100;
+    margin: 10px;
+    padding: 10px;
 }
 .mapa { 
     margin: 70px 0px 100px 0px;
