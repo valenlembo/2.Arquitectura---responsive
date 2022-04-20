@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css">
     <title>Home</title>
 </head>
@@ -46,15 +47,15 @@
             <div class="section">
                 <!-- Quienes somos -->
                 <section class="textoYFoto">
-                    <div class="textoIzq">
+                    <div class="textoIzq" data-aos="zoom-in">
                         <h2>¿Quiénes somos?</h2>
                         <p>Somos dos arquitectos que brindamos soluciones y propuestas a cada necesidad de nuestros clientes en particular, logrando un equilibrio ideal entre calidad y producto final, no importa el tipo de proyecto o requerimiento, bien sea para tu hogar, empresa, edificio. Te otorgamos la respuesta adecuada a lo que necesitas.</p>
                     </div>
-                    <img class="imgDer" src="./img/pexels-photo-157811.jpeg" alt="">
+                    <img class="imgDer" data-aos="zoom-in" src="./img/pexels-photo-157811.jpeg" alt="">
                 </section>
                 <!-- Que hacemos -->
                 <section class="textoYFoto2">
-                    <div class="textoDer">
+                    <div class="textoDer" data-aos="zoom-in">
                         <h2>¿Qué hacemos?</h2>
                         <ul>
                             <li>Proyecto y Dirección de Obra</li>
@@ -64,7 +65,7 @@
                             <li>Informes técnicos</li>
                         </ul>
                     </div>
-                    <img class="imgIzq" src="./img/pexels-photo-1492232.jpeg" alt="">
+                    <img class="imgIzq" data-aos="zoom-in" src="./img/pexels-photo-1492232.jpeg" alt="">
                 </section>
             </div>
         </main>
@@ -100,5 +101,9 @@
 
     <script src="https://kit.fontawesome.com/c91c0a21e3.js" crossorigin="anonymous"></script>
     <script src="./javascript/app.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

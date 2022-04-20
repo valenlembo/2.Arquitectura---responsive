@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="description" content="">  -->
     <meta name="keywords" content="arquitectura, planos, reformas, habilitaciones, informes, asesoria, diseño">
     <link rel="shortcut icon" href="../img/favicon.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <link rel="stylesheet" href="../css/style.css">
     <title>Nosotros</title>
 </head>
@@ -41,7 +41,9 @@
             <!-- Imagen principal  -->
             <img src="../img/hero2.webp" alt="" class="imgAncha">
             <!-- Quienes somos -->
-            <section class="nosotrosYPerfiles">
+            <section class="nosotrosYPerfiles" data-aos="fade-zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="500">
                 <div class="titulo">
                     <h2>Quienes Somos</h2>
                 </div>
@@ -58,15 +60,15 @@
             </section>
             <!-- Nuestra historia -->
             <section class="textoYFoto">
-                <div class="textoIzq">
+                <div class="textoIzq" data-aos="zoom-in">
                     <h2>Nuestra Historia</h2>
                     <p>Unimos experiencias profesionales para crear 2A Arquitectura como medio para brindar servicios de arquitectura en diversos campos proyectando, diseñando o rediseñando espacios nuevos o ya existentes. Así mismo brindamos asesoría técnica para diversos clientes ya sea particulares, empresas y/o consorcios o todo aquel que lo necesite. </p>
                 </div>
-                <img class="imgDer" src="../img/pexels-photo-2815033.webp" alt="">
+                <img class="imgDer" data-aos="zoom-in" src="../img/pexels-photo-2815033.webp" alt="">
             </section>
             <!-- Que hacemos -->
             <section class="textoYFoto2">
-                <div class="textoDer">
+                <div class="textoDer" data-aos="zoom-in">
                     <h2>Que Hacemos</h2>
                     <ul>
                         <li>Proyecto y Dirección de Obra</li>
@@ -76,11 +78,11 @@
                         <li>Informes técnicos</li>
                     </ul>
                 </div>
-                <img class="imgIzq" src="../img/pexels-photo-3277468.jpeg" alt="">
+                <img class="imgIzq" data-aos="zoom-in" src="../img/pexels-photo-3277468.jpeg" alt="">
             </section>
             <!-- como lo hacemos -->
             <section class="textoYFoto">
-                <div class="textoIzq">
+                <div class="textoIzq" data-aos="zoom-in">
                     <h2>Como lo Hacemos</h2>
                     <ol>
                         <li>Nos contactas a los teléfonos y/o mail.</li>
@@ -88,7 +90,7 @@
                         <li>Presupuestamos tu trabajo.</li>
                     </ol>
                 </div>
-                <img class="imgDer" src="../img/pexels-photo-6434779.webp" alt="">
+                <img class="imgDer" data-aos="zoom-in" src="../img/pexels-photo-6434779.webp" alt="">
             </section>
         </main>
         <!-- footer -->
@@ -123,5 +125,9 @@
 
     <script src="https://kit.fontawesome.com/c91c0a21e3.js" crossorigin="anonymous"></script>
     <script src="../javascript/app.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
