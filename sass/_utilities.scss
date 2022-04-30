@@ -1,0 +1,29 @@
+// variables
+$bgcolor: #f2f2f2;
+$font-family: "Inter", sans-serif;
+$secondary-color: #202121;
+// mixins
+@mixin texto-derecha{ 
+    margin: 100px 0px 0px 0px;
+    width: 50%;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: center; 
+}
+@mixin texto-izquierda{
+    width: 40%;
+    margin: 10% 5% 0% 5%;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: center;
+}
+@mixin img-derecha {
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+}
+@mixin img-izquierda {
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+}
