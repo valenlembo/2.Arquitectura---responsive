@@ -439,48 +439,14 @@ ul.show {
   background-size: cover;
 }
 
-.textoYHero {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-}
-.textoYHero .imgHero {
-  width: 500px;
-}
-.textoYHero .textoServicios {
-  width: 40%;
-  margin-top: 110px;
-  color: #202121;
-}
-.textoYHero .textoServicios .btnServicios {
-  background-color: #202121;
-  padding: 10px;
-  margin-top: 10px;
-}
-.textoYHero .textoServicios .btnServicios a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: medium;
+.card-title {
+  color: rgb(49, 155, 155);
+  font-weight: bold;
 }
 
-.servicios {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-  justify-content: space-evenly;
-}
-.servicios .servicioItem {
-  margin: 50px;
-  color: #ffffff;
-  background-color: #202121;
-  text-align: center;
-  width: 300px;
-  height: auto;
-  padding: 20px;
-  border: 2px solid #202121;
-  border-radius: 10px;
-  line-height: 1.4;
+.card-img {
+  height: 200px;
+  background-size: cover;
 }
 
 .containerContacto {
