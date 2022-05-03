@@ -10,20 +10,20 @@
     display: flex;
     flex-direction: row;
     .textoIzq{
-        @include texto-izquierda()
+        @include texto-foto(100px 0 0 0, 50%, 1.6, 18px, center);
     }
     .imgDer{
-        @include img-derecha()
+        @include img-texto(50%, 500px, cover);
     }
 }
 .textoYFoto2{
     display: flex;
     flex-direction: row-reverse;
     .textoDer{
-        @include texto-derecha()
+        @include texto-foto(10% 5% 0 5% , 40%, 1.6, 18px, center)
     }
     .imgIzq{
-        @include img-izquierda()
+        @include img-texto(50%, 500px, cover)
     }
 }
 .textoDer ul li{
@@ -654,5 +654,4 @@
         width: 250px;
     }
 }
-
 

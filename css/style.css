@@ -145,8 +145,8 @@ ul.show {
   flex-direction: row;
 }
 .textoYFoto .textoIzq {
-  width: 40%;
-  margin: 10% 5% 0% 5%;
+  margin: 100px 0 0 0;
+  width: 50%;
   line-height: 1.6;
   font-size: 18px;
   text-align: center;
@@ -162,8 +162,8 @@ ul.show {
   flex-direction: row-reverse;
 }
 .textoYFoto2 .textoDer {
-  margin: 100px 0px 0px 0px;
-  width: 50%;
+  margin: 10% 5% 0 5%;
+  width: 40%;
   line-height: 1.6;
   font-size: 18px;
   text-align: center;
