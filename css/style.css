@@ -8,10 +8,10 @@
 .containerProyectos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
   height: 100vh;
+  width: 100%;
   gap: 0px 0px;
-  grid-template-areas: "navbar navbar" "tituloMayuscula tituloMayuscula" "galeria galeria" "pieDePag pieDePag";
+  grid-template-areas: "navbar navbar" "tituloMayuscula tituloMayuscula" "galeria galeria" "footerProyectos footerProyectos";
 }
 
 * {
@@ -38,8 +38,8 @@ body {
 .navbar .menu {
   position: fixed;
   background-color: rgba(242, 242, 242, 0.768627451);
-  width: 100%;
   height: 105px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,57 +79,56 @@ ul.show {
   top: 95px;
 }
 
-.pieDePag {
+.pieDePag, .footerProyectos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr;
-  width: 98vw;
-  margin-top: 50px;
+  grid-template-rows: 1.5fr 0.5fr;
+  background-color: #202121;
+  color: #fff;
   font-size: medium;
   gap: 0px 0px;
-  grid-auto-flow: row;
   grid-template-areas: "contactoIconos links" "derechos derechos";
+  grid-area: pieDePag;
 }
-.pieDePag .contactoIconos {
+.pieDePag .contactoIconos, .footerProyectos .contactoIconos {
   width: 70%;
-  line-height: 1.5;
+  padding-top: 50px;
   grid-area: contactoIconos;
   display: flex;
   flex-direction: column;
   justify-self: flex-end;
 }
-.pieDePag .contactoIconos .iconos {
+.pieDePag .contactoIconos .iconos, .footerProyectos .contactoIconos .iconos {
   padding: 20px 0px;
 }
-.pieDePag .contactoIconos .iconos a {
-  color: #202121;
+.pieDePag .contactoIconos .iconos a, .footerProyectos .contactoIconos .iconos a {
+  color: #fff;
   margin-right: 20px;
 }
-.pieDePag .links {
+.pieDePag .links, .footerProyectos .links {
   width: 90%;
   grid-area: links;
-  line-height: 1.5;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
-.pieDePag .links a {
+.pieDePag .links a, .footerProyectos .links a {
   text-decoration: none;
-  color: #202121;
+  color: #fff;
 }
-.pieDePag .links a:hover {
+.pieDePag .links a:hover, .footerProyectos .links a:hover {
   font-weight: bold;
 }
-.pieDePag .derechos {
+.pieDePag .derechos, .footerProyectos .derechos {
   grid-area: derechos;
-  color: #202121;
+  color: #fff;
   margin-left: 13%;
 }
-
-.linea {
-  border-bottom: solid 1px #202121;
-  width: 85%;
+.pieDePag .derechos .linea, .footerProyectos .derechos .linea {
+  border-bottom: solid 1px #fff;
   height: 10px;
+  width: 85%;
 }
 
 .main {
@@ -137,7 +136,7 @@ ul.show {
 }
 
 .carousel-item {
-  height: 550px;
+  filter: grayscale(100%);
 }
 
 .textoYFoto {
@@ -179,19 +178,22 @@ ul.show {
 }
 
 .nosotrosYPerfiles {
-  height: 500px;
-  border-bottom: rgb(109, 109, 109) 1px solid;
+  height: 600px;
+  background-color: #202121;
 }
 .nosotrosYPerfiles .titulo {
   text-align: center;
-  margin: 30px 0px 30px 0px;
+  margin-bottom: 30px;
+  padding-top: 30px;
   font-size: 23px;
-  color: rgb(29, 29, 29);
+  color: #202121;
+  color: #f2f2f2;
 }
 .nosotrosYPerfiles .nosotros {
   display: flex;
   justify-content: center;
   text-align: center;
+  color: #f2f2f2;
 }
 .nosotrosYPerfiles .nosotros .agus {
   width: 45%;
@@ -205,20 +207,32 @@ ul.show {
   line-height: 1.8;
   font-size: 18px;
 }
-.nosotrosYPerfiles .nosotros img {
-  transition: 2s;
-}
-.nosotrosYPerfiles .nosotros img:hover {
-  filter: grayscale(0%);
-}
 
 .agus img, .cris img {
-  width: 200px;
   height: 200px;
+  width: 200px;
   border-radius: 100%;
   background-size: cover;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   filter: grayscale(100%);
+}
+
+.footerProyectos {
+  grid-area: footerProyectos;
+  background-color: #f2f2f2;
+  color: #202121;
+}
+.footerProyectos .contactoIconos .iconos a {
+  color: #202121;
+}
+.footerProyectos .links a {
+  color: #202121;
+}
+.footerProyectos .derechos {
+  color: #202121;
+}
+.footerProyectos .derechos .linea {
+  border-bottom: solid 1px #202121;
 }
 
 .tituloMayuscula {
@@ -261,7 +275,7 @@ ul.show {
 .galeria .img:hover {
   transform: scale(1.5);
   transition: 1.3s;
-  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.768627451);
+  box-shadow: 0 0 5px #fff;
 }
 
 .img1 {
@@ -439,8 +453,48 @@ ul.show {
   background-size: cover;
 }
 
-.card-title {
-  color: rgb(49, 155, 155);
+.card-yellow {
+  border: 1px solid #FF9F00;
+}
+
+.card-title-yellow {
+  color: #FF9F00;
+  font-weight: bold;
+}
+
+.card-orange {
+  border: 1px solid #FF5733;
+}
+
+.card-title-orange {
+  color: #FF5733;
+  font-weight: bold;
+}
+
+.card-red {
+  border: 1px solid #C70039;
+}
+
+.card-title-red {
+  color: #C70039;
+  font-weight: bold;
+}
+
+.card-board {
+  border: 1px solid #900C3F;
+}
+
+.card-title-board {
+  color: #900C3F;
+  font-weight: bold;
+}
+
+.card-violet {
+  border: 1px solid #581845;
+}
+
+.card-title-violet {
+  color: #581845;
   font-weight: bold;
 }
 
@@ -462,7 +516,7 @@ ul.show {
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 30px 10px;
-  margin: 70px 0px 100px 0px;
+  margin: 70px 50px 100px 0px;
 }
 .containerContacto .contactoCaja .contactoHeader h3 {
   color: #e7eef3;
@@ -475,8 +529,8 @@ ul.show {
   flex-direction: column;
 }
 .containerContacto .contactoCaja .contactoInputs input {
-  width: 250px;
   height: 45px;
+  width: 250px;
   background: transparent;
   border: none;
   border-bottom: 1px solid rgba(251, 251, 251, 0.1);
@@ -491,12 +545,12 @@ ul.show {
   color: #f4f4f4;
   margin: 10px;
   padding: 10px;
-  width: 250px;
   height: 250px;
+  width: 250px;
 }
 .containerContacto .contactoCaja .contactoInputs button {
-  width: 251px;
   height: 40px;
+  width: 251px;
   background-color: #e7eef3;
   border-radius: 10px;
   font-size: 1.2rem;
@@ -512,7 +566,6 @@ ul.show {
 }
 
 .cardsContainer {
-  background: linear-gradient(180deg, #fff 50%, #202121 50%);
   height: 370px;
   width: 100%;
 }
@@ -525,8 +578,8 @@ ul.show {
   color: #202121;
   background-color: white;
   text-align: center;
-  width: 250px;
   height: 250px;
+  width: 250px;
   padding: 15px;
   border: 2px solid #202121;
   border-radius: 10px;
@@ -554,8 +607,8 @@ ul.show {
 
   .agus img, .cris img {
     margin: 0px 0px 0px 0px;
-    width: 150px;
     height: 150px;
+    width: 150px;
   }
 
   .textoYHero {
@@ -670,28 +723,25 @@ ul.show {
     position: fixed;
     width: 100vw;
     height: calc(100% - 95px);
-    background: #434646;
+    background: #5c5f5f;
     top: -100vh;
     text-align: center;
     transition: all 0.4s;
     flex-direction: column;
+    padding: 0;
   }
 
-  .menuItems li {
+  .navbar .menu .menuItems li {
     margin: 30px 0 0 0;
     line-height: 30px;
   }
 
-  .menuItems li:hover {
-    background: none;
-  }
-
-  .menuItems li a {
+  .navbar .menu .menuItems li a {
     font-size: 20px;
-    color: #fff;
+    color: #ffffff;
   }
 
-  .menuItems li a:hover {
+  .navbar .menu .menuItems li a:hover {
     color: rgb(3, 3, 3);
   }
 
@@ -733,8 +783,8 @@ ul.show {
   }
 
   .servicioItem {
-    width: 200px;
     height: auto;
+    width: 200px;
     padding: 10px;
     margin: 20px;
     font-size: small;
@@ -772,7 +822,7 @@ ul.show {
 }
 @media screen and (max-width: 650px) {
   .carousel-item {
-    height: 300px;
+    height: 250px;
   }
 
   .galeria {
@@ -840,7 +890,11 @@ ul.show {
     height: 300px;
   }
 
-  .pieDePag {
+  .carousel-item {
+    height: 200px;
+  }
+
+  .pieDePag, .footerProyectos {
     grid-template-columns: 1fr;
     grid-template-rows: 0.7fr 1fr 0.3fr;
     grid-template-areas: "links" "contactoIconos" "derechos";
@@ -848,21 +902,23 @@ ul.show {
 
   .links {
     justify-self: center;
+    padding-top: 5px;
   }
 
-  .contactoIconos {
+  .pieDePag .contactoIconos, .footerProyectos .contactoIconos {
     width: 70%;
     text-align: center;
     justify-self: center;
+    padding-top: 5px;
   }
 
-  .agus p, .cris p, .textoDer, .textoIzq, .nosotros, .pieDePag, .textoHero, .servicioItem, .cardItem, .tituloMayuscula {
+  .agus p, .cris p, .textoDer, .textoIzq, .nosotros, .pieDePag, .footerProyectos, .textoHero, .servicioItem, .cardItem, .tituloMayuscula {
     font-size: small;
   }
 
   .cardItem {
-    width: 200px;
     height: 200px;
+    width: 200px;
   }
 }
 @media screen and (max-width: 466px) {
@@ -871,11 +927,12 @@ ul.show {
   }
 
   .carousel-item {
-    height: 200px;
+    height: 150px;
   }
-
-  .textoYHero .imgHero {
-    width: 250px;
+}
+@media screen and (max-width: 300px) {
+  .carousel-item {
+    height: 100px;
   }
 }
 

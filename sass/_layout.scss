@@ -10,15 +10,14 @@
 }
 .containerProyectos{
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    width: 100%;
-    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    @include alto-ancho(100vh, 100%); 
     gap: 0px 0px; 
     grid-template-areas: 
         "navbar navbar"
         "tituloMayuscula tituloMayuscula"
         "galeria galeria"
-        "pieDePag pieDePag"; 
+        "footerProyectos footerProyectos"; 
 }
 // GENERAL 
 *{
@@ -43,8 +42,7 @@ body{
     .menu{
         position: fixed;
         background-color: #f2f2f2c4;
-        width: 100%;
-        height: 105px;
+        @include alto-ancho(105px, 100%);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -86,18 +84,18 @@ ul.show{
 .pieDePag {  
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr;
-    width: 98vw;
-    margin-top: 50px;
+    grid-template-rows: 1.5fr 0.5fr;
+    background-color: $secondary-color;
+    color: #fff;
     font-size: medium;
     gap: 0px 0px;
-    grid-auto-flow: row;
     grid-template-areas:
         "contactoIconos links"
         "derechos derechos";
+    grid-area: pieDePag;
     .contactoIconos { 
         width: 70%;
-        line-height: 1.5;
+        padding-top: 50px;
         grid-area: contactoIconos;
         display: flex;
         flex-direction: column;
@@ -105,7 +103,7 @@ ul.show{
         .iconos{
             padding: 20px 0px;
             a{
-                color: $secondary-color;
+                color: #fff;
                 margin-right: 20px;
             }
         }
@@ -113,13 +111,13 @@ ul.show{
     .links { 
         width: 90%;
         grid-area: links;
-        line-height: 1.5;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
         a{
             text-decoration: none;
-            color: $secondary-color;
+            color: #fff;
             &:hover{
                 font-weight: bold;
             }
@@ -127,12 +125,11 @@ ul.show{
     }
     .derechos { 
         grid-area: derechos; 
-        color: $secondary-color;
+        color: #fff;
         margin-left: 13%;
+        .linea{
+            border-bottom: solid 1px #fff;
+            @include alto-ancho(10px, 85%);
+        }  
     }    
 }
-.linea{
-    border-bottom: solid 1px $secondary-color;
-    width: 85%;
-    height: 10px;
-}                                   

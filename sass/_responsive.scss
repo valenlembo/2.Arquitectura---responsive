@@ -1,0 +1,306 @@
+// MEDIAS
+@media screen and (max-width: 950px){
+    // menu
+    .menuItems li a{
+        font-size: 16px;
+        padding: 5px 15px;
+    }
+    // nosotros
+    .nosotrosYPerfiles{
+        height: auto;
+    }
+    .nosotros{
+        flex-direction: column;
+        align-items: center;
+    }
+    .agus p, .cris p, .textoDer, .textoIzq{
+        font-size: 16px;
+    }
+    .agus img, .cris img{
+        margin: 0px 0px 0px 0px;
+        @include alto-ancho(150px, 150px);
+    }
+    // SERVICIOS
+    .textoYHero{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textoYHero .imgHero{
+        width: 400px;
+    }
+    .textoYHero .textoServicios{
+        width: 100%;
+        margin: 10px 0 0 0;
+        text-align: center;
+    } 
+    //CONTACTO
+    .containerContacto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactoCaja{
+        margin: 25px 0;
+    }
+    .cardsContainer{
+        height: auto;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardItem{
+        margin: 20px;
+    }
+    .mapa{
+        margin: 0;
+    }
+    .tituloMayuscula{
+        font-size: medium;
+    }
+    // GALERIA
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+        height: 2700px;
+    }
+    .img4{
+        grid-column: 1/2;
+        grid-row: 17/20;
+    }
+    .img5{
+        grid-column: 2/3;
+        grid-row: 17/19;
+    }
+    .img9{
+        grid-column: 3/4;
+        grid-row: 17/19;
+    }
+    .img10{
+        grid-column: 1/2;
+        grid-row: 20/22;
+    }
+    .img14{
+        grid-column: 2/3;
+        grid-row: 19/22;
+    }
+    .img15{
+        grid-column: 3/4;
+        grid-row: 19/22;
+    }
+    .img19{
+        grid-column: 1/2;
+        grid-row: 22/25;
+    }
+    .img20{
+        grid-column: 2/3;
+        grid-row: 22/25;
+    }
+    .img24{
+        grid-column: 3/4;
+        grid-row: 22/25;
+    }
+}
+@media screen and (max-width: 858px){
+    // MENU
+    .navbar .menu{
+        height: 95px;
+        position: relative;
+    }
+    .btnMenu{
+        display: inline-flex;
+        padding: 35px;
+    }
+    .menuItems{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 95px);
+        background: #5c5f5f;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+        padding: 0;
+    }
+    .navbar .menu .menuItems li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .navbar .menu .menuItems li a{
+        font-size: 20px;
+        color: #ffffff;
+    }
+    .navbar .menu .menuItems li a:hover{
+        color: rgb(3, 3, 3);
+    }
+    // INDEX
+    .carousel-item{
+        height: 300px;
+    }
+    .textoYFoto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textoYFoto .textoIzq{
+        width: 70%;
+        margin-top: 30px;
+    }
+    .textoYFoto .imgDer{
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+    .textoYFoto2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textoYFoto2 .imgIzq{
+        width: 100%;
+        background-size: cover;
+        margin: 30px 0;
+    }
+    .textoYFoto2 .textoDer{
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+    // SERVICIOS
+    .servicioItem{
+        @include alto-ancho(auto, 200px);
+        padding: 10px;
+        margin: 20px;
+        font-size: small;
+    }
+    // GALERIA
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        height: 4500px;
+    }
+    .img3{
+        grid-column: 1/2;
+        grid-row: 25/28;
+    }
+    .img8{
+        grid-column: 2/3;
+        grid-row: 25/29;
+    }
+    .img13{
+        grid-column: 1/2;
+        grid-row: 28/30;
+    }
+    .img18{
+        grid-column: 2/3;
+        grid-row: 29/33;
+    }
+    .img23{
+        grid-column: 1/2;
+        grid-row: 30/33;
+    }
+}
+@media screen and (max-width: 650px){
+    // INDEX
+    .carousel-item{
+        height: 250px;
+    }
+    // GALERIA
+    .galeria{
+        grid-template-columns: 1fr;
+        grid-gap: 10px 0;
+        height: 10000px;
+    }
+    .img2{
+        grid-column: 1/2;
+        grid-row: 33/35;
+    }
+    .img7{
+        grid-column: 1/2;
+        grid-row: 35/37;
+    }
+    .img12{
+        grid-column: 1/2;
+        grid-row: 37/40;
+    }
+    .img17{
+        grid-column: 1/2;
+        grid-row: 40/44;
+    }
+    .img22{
+        grid-column: 1/2;
+        grid-row: 44/48;
+    }
+    .img5{
+        grid-column: 1/2;
+        grid-row: 48/51;
+    }
+    .img14{
+        grid-column: 1/2;
+        grid-row: 51/54;
+    }
+    .img20{
+        grid-column: 1/2;
+        grid-row: 54/57;
+    }
+    .img8{
+        grid-column: 1/2;
+        grid-row: 57/60;
+    }
+    .img18{
+        grid-column: 1/2;
+        grid-row: 60/64;
+    }
+}
+@media screen and (max-width: 570px){
+    // HOME
+    .textoYFoto .imgDer{
+        height: 300px;
+    }
+    .textoYFoto2 .imgIzq{
+        height: 300px;
+    }
+    .carousel-item{
+        height: 200px;
+    }
+    // FOOTER
+    .pieDePag{ 
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 1fr 0.3fr;
+        grid-template-areas: 
+            "links"
+            "contactoIconos"
+            "derechos";
+    }
+    .links{
+        justify-self: center;
+        padding-top: 5px;
+    }
+    .pieDePag .contactoIconos{
+        width: 70%;
+        text-align: center;
+        justify-self: center;
+        padding-top: 5px;
+    }
+    .agus p, .cris p, .textoDer, .textoIzq, .nosotros, .pieDePag, .textoHero, .servicioItem, .cardItem, .tituloMayuscula{
+        font-size: small;
+    }
+    .cardItem{
+        @include alto-ancho(200px, 200px);
+    }
+}
+@media screen and (max-width: 466px){
+    // INDEX
+    .navbar .logo{
+        width: 100px;
+    }
+    .carousel-item{
+        height: 150px;
+    }
+}
+@media screen and (max-width: 300px){
+    // INDEX
+    .carousel-item{
+        height: 100px;
+    }
+}
+
+
+

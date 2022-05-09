@@ -3,6 +3,10 @@ $bgcolor: #f2f2f2;
 $font-family: "Inter", sans-serif;
 $secondary-color: #202121;
 // mixins
+@mixin alto-ancho($height, $width){
+    height: $height;
+    width: $width;
+}
 @mixin texto-foto ($margin, $width, $line-height, $font-size, $text-align){ 
     margin: $margin;
     width: $width;
@@ -10,9 +14,24 @@ $secondary-color: #202121;
     font-size: $font-size;
     text-align: $text-align; 
 }
-
 @mixin img-texto ($width, $height, $bg-size) {
     width: $width;
     height: $height;
     background-size: $bg-size;
 }
+// maps
+$palette:(
+    'yellow': #FF9F00, 
+    'orange': #FF5733,
+    'red': #C70039,
+    'board': #900C3F,
+    'violet': #581845,
+);
+$estilos-cards:(
+    'alto': 370px,
+    'ancho': 100%,
+    'display': flex,
+    'mb': 50px,
+    'jc': space-evenly,
+)
+
