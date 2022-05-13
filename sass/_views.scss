@@ -280,17 +280,16 @@
     background-size: cover;
 }
 // SERVICIOS
-@each $color, $hex in $palette {
-    .card-#{$color}{
-        border: 1px solid $hex;
-    }
-    .card-title-#{$color}{
-        color: $hex;
-        font-weight: bold;
-    }
+.card-title{
+    color: #252850;
+    font-weight: bold;
 }
 .card-img{
     height: 200px;
+    background-size: cover;
+}
+.main{
+    background-image: url(../img/blob-haikei.svg);
     background-size: cover;
 }
 // CONTACTO

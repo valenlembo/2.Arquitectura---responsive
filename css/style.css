@@ -453,53 +453,18 @@ ul.show {
   background-size: cover;
 }
 
-.card-yellow {
-  border: 1px solid #FF9F00;
-}
-
-.card-title-yellow {
-  color: #FF9F00;
-  font-weight: bold;
-}
-
-.card-orange {
-  border: 1px solid #FF5733;
-}
-
-.card-title-orange {
-  color: #FF5733;
-  font-weight: bold;
-}
-
-.card-red {
-  border: 1px solid #C70039;
-}
-
-.card-title-red {
-  color: #C70039;
-  font-weight: bold;
-}
-
-.card-board {
-  border: 1px solid #900C3F;
-}
-
-.card-title-board {
-  color: #900C3F;
-  font-weight: bold;
-}
-
-.card-violet {
-  border: 1px solid #581845;
-}
-
-.card-title-violet {
-  color: #581845;
+.card-title {
+  color: #252850;
   font-weight: bold;
 }
 
 .card-img {
   height: 200px;
+  background-size: cover;
+}
+
+.main {
+  background-image: url(../img/blob-haikei.svg);
   background-size: cover;
 }
 
