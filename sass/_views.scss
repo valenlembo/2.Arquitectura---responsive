@@ -2,6 +2,8 @@
 // INDEX
 .main{
     grid-area: main;
+    background-image: url(../img/blob-haikei.svg);
+    background-size: cover;
 }
 .carousel-item{
     filter: grayscale(100%);
@@ -286,10 +288,6 @@
 }
 .card-img{
     height: 200px;
-    background-size: cover;
-}
-.main{
-    background-image: url(../img/blob-haikei.svg);
     background-size: cover;
 }
 // CONTACTO

@@ -133,6 +133,8 @@ ul.show {
 
 .main {
   grid-area: main;
+  background-image: url(../img/blob-haikei.svg);
+  background-size: cover;
 }
 
 .carousel-item {
@@ -463,11 +465,6 @@ ul.show {
   background-size: cover;
 }
 
-.main {
-  background-image: url(../img/blob-haikei.svg);
-  background-size: cover;
-}
-
 .containerContacto {
   display: flex;
   justify-content: center;
@@ -674,6 +671,11 @@ ul.show {
   }
 }
 @media screen and (max-width: 858px) {
+  .main {
+    background-size: auto;
+    background-position: center;
+  }
+
   .navbar .menu {
     height: 95px;
     position: relative;

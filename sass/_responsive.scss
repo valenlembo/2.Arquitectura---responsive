@@ -102,6 +102,10 @@
     }
 }
 @media screen and (max-width: 858px){
+    .main {
+        background-size: auto;
+        background-position: center;
+    }
     // MENU
     .navbar .menu{
         height: 95px;
