@@ -701,18 +701,17 @@ ul.show {
   }
 
   #scrollUp {
-    position: fixed;
-    bottom: 1rem;
+    bottom: 3rem;
     right: 1rem;
   }
   #scrollUp .btnUp {
-    width: 21px;
-    height: 21px;
+    width: 30px;
+    height: 30px;
   }
   #scrollUp .btnUp i {
     font-size: 1rem;
-    left: 4px;
-    top: 2px;
+    left: 9px;
+    top: 7px;
   }
 
   .navbar .menu {

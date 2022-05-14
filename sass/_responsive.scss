@@ -108,16 +108,15 @@
     }
     // btnup
     #scrollUp{
-        position: fixed;
-        bottom: 1rem;
-        right: 1rem;
+        bottom: 3rem;
+        right: 1rem; 
         .btnUp{
-            width: 21px;
-            height: 21px;
+            width: 30px;
+            height: 30px;
             i{
                 font-size: 1rem;
-                left: 4px;
-                top: 2px;
+                left: 9px;
+                top: 7px;
             }
         }
     }
