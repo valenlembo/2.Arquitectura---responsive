@@ -36,13 +36,17 @@ body {
   cursor: pointer;
   width: 35px;
   height: 35px;
+  border: 1px solid #202121;
 }
-#scrollUp i {
+#scrollUp .btnUp:hover {
+  background-color: rgb(216, 216, 216);
+}
+#scrollUp .btnUp i {
   color: #202121;
   position: absolute;
   font-size: 1.5rem;
   left: 22%;
-  top: 19%;
+  top: 18%;
 }
 
 .navbar {
@@ -694,6 +698,21 @@ ul.show {
   .main {
     background-size: auto;
     background-position: center;
+  }
+
+  #scrollUp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  #scrollUp .btnUp {
+    width: 21px;
+    height: 21px;
+  }
+  #scrollUp .btnUp i {
+    font-size: 1rem;
+    left: 4px;
+    top: 2px;
   }
 
   .navbar .menu {

@@ -106,6 +106,21 @@
         background-size: auto;
         background-position: center;
     }
+    // btnup
+    #scrollUp{
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        .btnUp{
+            width: 21px;
+            height: 21px;
+            i{
+                font-size: 1rem;
+                left: 4px;
+                top: 2px;
+            }
+        }
+    }
     // MENU
     .navbar .menu{
         height: 95px;
