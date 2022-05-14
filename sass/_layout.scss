@@ -29,6 +29,25 @@ body{
     background-color: $bgcolor;
     font-family: $font-family;
 }
+#scrollUp{
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    .btnUp{
+        background-color: $bgcolor;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+    }
+    i{
+        color: $secondary-color;
+        position: absolute;
+        font-size: 1.5rem;
+        left: 22%;
+        top: 19%;
+    }
+}
 // NAV
 .navbar { 
     grid-area: navbar; 

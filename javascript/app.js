@@ -1,3 +1,4 @@
+// boton menu responsive
 addEventListener('DOMContentLoaded',()=>{
     const btnMenu = document.querySelector('.btnMenu')
     if(btnMenu){
@@ -6,4 +7,12 @@ addEventListener('DOMContentLoaded',()=>{
             menuItems.classList.toggle('show')
         })
     }
+})
+// boton volver para arriba
+document.querySelector('#scrollUp')
+addEventListener('click', ()=>{
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 })

@@ -40,8 +40,8 @@
         flex-direction: column;
         align-items: center;
     }
-    .contactoCaja{
-        margin: 25px 0;
+    .containerContacto .contactoCaja{
+        margin: 25px 0 0 0;
     }
     .cardsContainer{
         height: auto;
@@ -162,7 +162,7 @@
     .textoYFoto2 .imgIzq{
         width: 100%;
         background-size: cover;
-        margin: 30px 0;
+        margin: 30px 0 0 0;
     }
     .textoYFoto2 .textoDer{
         width: 100%;
