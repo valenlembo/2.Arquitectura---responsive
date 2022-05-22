@@ -9,8 +9,8 @@ addEventListener('DOMContentLoaded',()=>{
     }
 })
 // boton volver para arriba
-document.querySelector('#scrollUp')
-addEventListener('click', ()=>{
+document.querySelector('.btnContainer')
+.addEventListener('click', ()=>{
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
