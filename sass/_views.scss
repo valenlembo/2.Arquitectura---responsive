@@ -2,17 +2,30 @@
 // INDEX
 .main{
     grid-area: main;
-    background-image: url(../img/blob-haikei.svg);
+    background-image: url(../img/fondo.svg);
     background-size: cover;
 }
-.carousel-item{
-    filter: grayscale(100%);
+.carousel-inner{
+    height: 520px;
+    .carousel-item{
+        .img{
+            background-size: cover;
+        }
+    }
 }
 .textoYFoto{
     display: flex;
     flex-direction: row;
     .textoIzq{
-        @include texto-foto(100px 0 0 0, 50%, 1.6, 18px, center, 40px);
+        width:50%;
+        height: 500px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.6; 
+        font-size: 19px;
+        padding: 40px
     }
     .imgDer{
         @include img-texto(50%, 500px, cover);
@@ -22,14 +35,19 @@
     display: flex;
     flex-direction: row-reverse;
     .textoDer{
-        @include texto-foto(10% 5% 0 5% , 40%, 1.6, 18px, center, 40px)
+        width:50%;
+        height: 500px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.6; 
+        font-size: 19px;
+        padding: 40px
     }
     .imgIzq{
         @include img-texto(50%, 500px, cover)
     }
-}
-.textoDer ul li{
-    list-style: none;
 }
 // NOSOTROS
 .nosotrosYPerfiles{
@@ -127,7 +145,6 @@
         &:hover{
                 transform: scale(1.5);
                 transition: 1.3s;
-                box-shadow: 0 0 5px #fff;
         }
     }
 }
@@ -282,6 +299,9 @@
     background-size: cover;
 }
 // SERVICIOS
+.card{
+    border-radius: 10px;
+}
 .card-title{
     color: #252850;
     font-weight: bold;
@@ -289,6 +309,9 @@
 .card-img{
     height: 200px;
     background-size: cover;
+}
+.card-body{
+    text-align: center;
 }
 // CONTACTO
 .containerContacto{
@@ -363,9 +386,8 @@
         color: $secondary-color;
         background-color: white;
         text-align: center;
-        @include alto-ancho(250px, 250px);
+        @include alto-ancho(auto, 270px);
         padding: 15px;
-        border: 2px solid $secondary-color;
         border-radius: 10px;
         line-height: 1.7;
     }

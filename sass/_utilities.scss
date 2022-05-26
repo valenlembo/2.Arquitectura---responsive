@@ -7,14 +7,6 @@ $secondary-color: #202121;
     height: $height;
     width: $width;
 }
-@mixin texto-foto ($margin, $width, $line-height, $font-size, $text-align, $padding){ 
-    margin: $margin;
-    width: $width;
-    line-height: $line-height;
-    font-size: $font-size;
-    text-align: $text-align; 
-    padding: $padding;
-}
 @mixin img-texto ($width, $height, $bg-size) {
     width: $width;
     height: $height;
@@ -25,7 +17,7 @@ $estilos-cards:(
     'alto': 370px,
     'ancho': 100%,
     'display': flex,
-    'mb': 50px,
+    'mb': 30px,
     'jc': space-evenly,
 )
 

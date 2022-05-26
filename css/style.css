@@ -55,7 +55,7 @@ body {
   z-index: 5;
 }
 .navbar .logo {
-  margin: 10px 0px 10px 50px;
+  margin-left: 50px;
   width: 150px;
   background-size: cover;
 }
@@ -81,7 +81,6 @@ body {
   text-decoration: none;
   color: gray;
   padding: 7px 17px;
-  display: block;
   font-size: 18px;
 }
 .navbar .menu .menuItems li a:hover {
@@ -157,12 +156,15 @@ ul.show {
 
 .main {
   grid-area: main;
-  background-image: url(../img/blob-haikei.svg);
+  background-image: url(../img/fondo.svg);
   background-size: cover;
 }
 
-.carousel-item {
-  filter: grayscale(100%);
+.carousel-inner {
+  height: 520px;
+}
+.carousel-inner .carousel-item .img {
+  background-size: cover;
 }
 
 .textoYFoto {
@@ -170,11 +172,14 @@ ul.show {
   flex-direction: row;
 }
 .textoYFoto .textoIzq {
-  margin: 100px 0 0 0;
   width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   line-height: 1.6;
-  font-size: 18px;
-  text-align: center;
+  font-size: 19px;
   padding: 40px;
 }
 .textoYFoto .imgDer {
@@ -188,21 +193,20 @@ ul.show {
   flex-direction: row-reverse;
 }
 .textoYFoto2 .textoDer {
-  margin: 10% 5% 0 5%;
-  width: 40%;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   line-height: 1.6;
-  font-size: 18px;
-  text-align: center;
+  font-size: 19px;
   padding: 40px;
 }
 .textoYFoto2 .imgIzq {
   width: 50%;
   height: 500px;
   background-size: cover;
-}
-
-.textoDer ul li {
-  list-style: none;
 }
 
 .nosotrosYPerfiles {
@@ -303,7 +307,6 @@ ul.show {
 .galeria .img:hover {
   transform: scale(1.5);
   transition: 1.3s;
-  box-shadow: 0 0 5px #fff;
 }
 
 .img1 {
@@ -481,6 +484,10 @@ ul.show {
   background-size: cover;
 }
 
+.card {
+  border-radius: 10px;
+}
+
 .card-title {
   color: #252850;
   font-weight: bold;
@@ -489,6 +496,10 @@ ul.show {
 .card-img {
   height: 200px;
   background-size: cover;
+}
+
+.card-body {
+  text-align: center;
 }
 
 .containerContacto {
@@ -559,23 +570,58 @@ ul.show {
 }
 .cardsContainer .cards {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   justify-content: space-evenly;
 }
 .cardsContainer .cardItem {
   color: #202121;
   background-color: white;
   text-align: center;
-  height: 250px;
-  width: 250px;
+  height: auto;
+  width: 270px;
   padding: 15px;
-  border: 2px solid #202121;
   border-radius: 10px;
   line-height: 1.7;
 }
 
+@media screen and (min-width: 1600px) {
+  .textoYFoto2 .textoDer {
+    line-height: 1.8;
+    font-size: 25px;
+    padding: 40px;
+  }
+  .textoYFoto2 .imgIzq {
+    width: 50%;
+    height: 600px;
+    background-size: cover;
+  }
+
+  .textoYFoto .textoIzq {
+    line-height: 1.8;
+    font-size: 25px;
+    padding: 40px;
+  }
+  .textoYFoto .imgDer {
+    width: 50%;
+    height: 600px;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 1196px) {
+  .carousel-inner {
+    height: 400px;
+  }
+}
 @media screen and (max-width: 950px) {
-  .menuItems li a {
+  .carousel-inner {
+    height: 350px;
+  }
+
+  .navbar .logo {
+    margin: 10px 0px 10px 50px;
+    width: 120px;
+  }
+  .navbar .menu .menuItems li a {
     font-size: 16px;
     padding: 5px 15px;
   }
@@ -583,50 +629,45 @@ ul.show {
   .nosotrosYPerfiles {
     height: auto;
   }
-
-  .nosotros {
+  .nosotrosYPerfiles .nosotros {
     flex-direction: column;
     align-items: center;
+  }
+  .nosotrosYPerfiles .nosotros .agus img, .nosotrosYPerfiles .nosotros .cris img {
+    margin: 0;
+    height: 150px;
+    width: 150px;
   }
 
   .agus p, .cris p, .textoDer, .textoIzq {
     font-size: 16px;
   }
 
-  .agus img, .cris img {
-    margin: 0px 0px 0px 0px;
-    height: 150px;
-    width: 150px;
+  .tituloMayuscula {
+    font-size: medium;
   }
 
   .containerContacto {
     flex-direction: column;
     align-items: center;
   }
-
   .containerContacto .contactoCaja {
     margin: 25px 0 0 0;
-  }
-
-  .cardsContainer {
-    height: auto;
-  }
-
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cardItem {
-    margin: 20px;
   }
 
   .mapa {
     margin: 0;
   }
 
-  .tituloMayuscula {
-    font-size: medium;
+  .cardsContainer {
+    height: auto;
+  }
+  .cardsContainer .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardsContainer .cards .cardItem {
+    margin: 20px;
   }
 
   .galeria {
@@ -703,8 +744,7 @@ ul.show {
     height: 95px;
     position: relative;
   }
-
-  .btnMenu {
+  .navbar .menu .btnMenu {
     display: inline-flex;
     padding: 35px;
   }
@@ -733,7 +773,7 @@ ul.show {
     color: rgb(3, 3, 3);
   }
 
-  .carousel-item {
+  .carousel-inner {
     height: 300px;
   }
 
@@ -742,19 +782,16 @@ ul.show {
     flex-direction: column;
     align-items: center;
   }
-
   .textoYFoto .textoIzq {
-    margin: 30px 0 0 0;
     width: 80%;
-    line-height: 1.6;
+    height: auto;
+    line-height: 1, 6;
     font-size: 18px;
-    text-align: center;
-    padding: 0px;
+    padding: 0;
+    margin: 30px 0;
   }
-
   .textoYFoto .imgDer {
     width: 100%;
-    margin: 30px 0 0 0;
   }
 
   .textoYFoto2 {
@@ -762,20 +799,16 @@ ul.show {
     flex-direction: column;
     align-items: center;
   }
-
   .textoYFoto2 .imgIzq {
     width: 100%;
-    background-size: cover;
-    margin: 30px 0 0 0;
   }
-
   .textoYFoto2 .textoDer {
-    margin: 30px 0 0 0;
     width: 80%;
-    line-height: 1.6;
+    height: auto;
+    line-height: 1, 6;
     font-size: 18px;
-    text-align: center;
-    padding: 0px;
+    padding: 0;
+    margin: 30px 0;
   }
 
   .servicioItem {
@@ -816,15 +849,19 @@ ul.show {
     grid-row: 30/33;
   }
 }
-@media screen and (max-width: 650px) {
-  .carousel-item {
+@media screen and (max-width: 726px) {
+  .carousel-inner {
     height: 250px;
   }
-
+}
+@media screen and (max-width: 650px) {
   .galeria {
     grid-template-columns: 1fr;
     grid-gap: 10px 0;
     height: 10000px;
+  }
+  .galeria .img:hover {
+    transform: scale(1);
   }
 
   .img2 {
@@ -877,7 +914,11 @@ ul.show {
     grid-row: 60/64;
   }
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 594px) {
+  .carousel-inner {
+    height: 200px;
+  }
+
   .textoYFoto .imgDer {
     height: 300px;
   }
@@ -886,24 +927,18 @@ ul.show {
     height: 300px;
   }
 
-  .carousel-item {
-    height: 200px;
-  }
-
   .pieDePag, .footerProyectos {
     grid-template-columns: 1fr;
     grid-template-rows: 0.7fr 1fr 0.3fr;
     grid-template-areas: "links" "contactoIconos" "derechos";
   }
-
-  .links {
-    justify-self: center;
-    padding-top: 5px;
-  }
-
   .pieDePag .contactoIconos, .footerProyectos .contactoIconos {
     width: 70%;
     text-align: center;
+    justify-self: center;
+    padding-top: 5px;
+  }
+  .pieDePag .links, .footerProyectos .links {
     justify-self: center;
     padding-top: 5px;
   }
@@ -912,7 +947,7 @@ ul.show {
     font-size: small;
   }
 
-  .cardItem {
+  .cardsContainer .cards .cardItem {
     height: 200px;
     width: 200px;
   }
@@ -922,12 +957,12 @@ ul.show {
     width: 100px;
   }
 
-  .carousel-item {
+  .carousel-inner {
     height: 150px;
   }
 }
 @media screen and (max-width: 300px) {
-  .carousel-item {
+  .carousel-inner {
     height: 100px;
   }
 }

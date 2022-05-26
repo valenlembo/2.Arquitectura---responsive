@@ -58,7 +58,7 @@ body{
     height: 105px;
     z-index: 5;
     .logo{
-        margin: 10px 0px 10px 50px;
+        margin-left: 50px;
         width: 150px;
         background-size: cover;
     }
@@ -80,7 +80,6 @@ body{
                     text-decoration: none;
                     color: gray;
                     padding: 7px 17px;
-                    display: block;
                     font-size: 18px;
                     &:hover{
                         background-color: rgba(167, 163, 163, 0.253);
