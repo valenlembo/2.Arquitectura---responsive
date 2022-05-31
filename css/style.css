@@ -629,12 +629,24 @@ ul.show {
   .nosotrosYPerfiles {
     height: auto;
   }
+  .nosotrosYPerfiles .titulo {
+    margin: 0;
+  }
+  .nosotrosYPerfiles .nosotros .agus img, .nosotrosYPerfiles .nosotros .cris img {
+    margin: 2px;
+    height: 150px;
+    width: 150px;
+  }
+
+  .nosotrosYPerfiles {
+    height: auto;
+  }
   .nosotrosYPerfiles .nosotros {
     flex-direction: column;
     align-items: center;
   }
   .nosotrosYPerfiles .nosotros .agus img, .nosotrosYPerfiles .nosotros .cris img {
-    margin: 0;
+    margin: 2px;
     height: 150px;
     width: 150px;
   }
@@ -959,6 +971,18 @@ ul.show {
 
   .carousel-inner {
     height: 150px;
+  }
+
+  .nosotrosYPerfiles {
+    height: auto;
+  }
+  .nosotrosYPerfiles .titulo {
+    margin: 0;
+  }
+  .nosotrosYPerfiles .nosotros .agus img, .nosotrosYPerfiles .nosotros .cris img {
+    margin: 2px;
+    height: 100px;
+    width: 100px;
   }
 }
 @media screen and (max-width: 300px) {

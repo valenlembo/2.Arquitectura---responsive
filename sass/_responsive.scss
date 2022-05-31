@@ -47,11 +47,23 @@
     // nosotros
     .nosotrosYPerfiles{
         height: auto;
+        .titulo{
+            margin: 0;
+        }
+        .nosotros{
+            .agus img, .cris img{
+                margin: 2px;
+                @include alto-ancho(150px, 150px);
+            }
+        }
+    }
+    .nosotrosYPerfiles{
+        height: auto;
         .nosotros{
             flex-direction: column;
             align-items: center;
             .agus img, .cris img{
-                margin: 0;
+                margin: 2px;
                 @include alto-ancho(150px, 150px);
             }
         }
@@ -361,6 +373,18 @@
     }
     .carousel-inner{
         height: 150px;
+    }
+    .nosotrosYPerfiles{
+        height: auto;
+        .titulo{
+            margin: 0;
+        }
+        .nosotros{
+            .agus img, .cris img{
+                margin: 2px;
+                @include alto-ancho(100px, 100px);
+            }
+        }
     }
 }
 @media screen and (max-width: 300px){
